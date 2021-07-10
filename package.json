@@ -1,0 +1,27 @@
+{
+  "name": "ksm-android-landing-page",
+  "version": "1.0.0",
+  "description": "KSM Android Landing Page",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "tailwindcss build style.css -o assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sotobakar/ksm-android-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sotobakar/ksm-android-landing-page/issues"
+  },
+  "homepage": "https://github.com/sotobakar/ksm-android-landing-page#readme"
+}

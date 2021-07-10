@@ -1,0 +1,11 @@
+.jumbotron {
+    background-image: url('assets/img/wallpaper.jpg');
+    background-size: cover;
+    height: 550px;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+}

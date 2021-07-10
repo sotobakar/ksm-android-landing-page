@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>KSM Android</title>
+</head>
+<body class="bg-tertiary">
+  <div class="relative bg-cover h-screen text-tertiary font-viceCitySans" style="background-image: url('assets/img/wallpaper.jpg');">
+    <div class="absolute h-full w-full flex flex-col bg-black bg-opacity-75">
+      <nav class="flex-none flex flex-row px-6 py-4 justify-between">
+        <div>
+          <img src="assets/img/logo.png" alt="Logo" class="h-20">
+        </div>
+        <div class="flex flex-row items-center gap-x-6 font-bold text-xl">
+          <a href="#">home</a>
+          <a href="/anggota.html">anggota</a>
+          <a href="/project.html">project showcase</a>
+        </div>
+      </nav>
+      <div class="flex-grow flex flex-col justify-center items-center">
+        <h1 class="text-6xl">Android UPNVJ</h1>
+        <button onclick="window.location.href='#tentang-kami'" class="mt-4 px-8 py-2 rounded-lg bg-primary">Cari Tahu Tentang Kami</button>
+      </div>
+    </div>
+  </div>
+  <div id="tentang-kami" class="h-screen bg-primary text-tertiary">
+    <div class="container h-full mx-auto flex flex-col">
+      <h1 class="flex-none py-4 text-center text-6xl">Tentang Kami</h1>
+      <div class="flex-grow flex flex-row items-center">
+        <p class="w-1/2 text-justify px-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsam mollitia veniam nobis unde, tempore dolor natus, odio incidunt quisquam ad dignissimos itaque architecto fugiat cumque vel, nemo laboriosam inventore?</p>
+        <div class="w-1/2">
+          <img src="assets/img/ksm_android_logo.png" alt="KSM Android Logo" class="w-1/2 mx-auto">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
