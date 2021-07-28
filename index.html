@@ -8,9 +8,9 @@
   <title>KSM Android</title>
 </head>
 <body class="bg-tertiary">
-  <div class="relative bg-cover h-screen text-tertiary font-viceCitySans" style="background-image: url('assets/img/wallpaper.jpg');">
+  <div id="banner-home" class="relative bg-cover h-screen text-tertiary font-viceCitySans" style="background-image: url('assets/img/wallpaper.jpg');">
     <div class="absolute h-full w-full flex flex-col bg-black bg-opacity-75">
-      <nav class="flex-none flex flex-row px-6 py-4 justify-between">
+      <nav class="fixed w-full flex-none flex flex-row px-6 py-4 justify-between">
         <div>
           <img src="assets/img/logo.png" alt="Logo" class="h-20">
         </div>
@@ -26,8 +26,8 @@
       </div>
     </div>
   </div>
-  <div id="tentang-kami" class="h-screen bg-primary text-tertiary">
-    <div class="container h-full mx-auto flex flex-col">
+  <div id="tentang-kami" class="min-h-screen h-full py-20 bg-primary text-tertiary">
+    <div class="container h-full lg:max-w-screen-lg mx-auto flex flex-col">
       <h1 class="flex-none py-4 text-center text-6xl">Tentang Kami</h1>
       <div class="flex-grow flex flex-row items-center">
         <p class="w-1/2 text-justify px-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsam mollitia veniam nobis unde, tempore dolor natus, odio incidunt quisquam ad dignissimos itaque architecto fugiat cumque vel, nemo laboriosam inventore?</p>
@@ -37,5 +37,6 @@
       </div>
     </div>
   </div>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
