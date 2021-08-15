@@ -63,10 +63,10 @@
     <div class="w-11/12 md:w-5/6 h-full mx-auto flex flex-col">
       <h1 class="text-6xl font-bold uppercase flex-none">Tujuan, Visi, Misi</h1>
       <div class="mt-8 grid grid-cols-12 gap-x-8 flex-grow">
-        <div class="col-span-6">
+        <div class="hidden md:block col-span-6">
           <img class="block w-full h-auto" src="assets/img/tujuan_visi_misi.svg" alt="">
         </div>
-        <div class="col-span-6">
+        <div class="col-span-12 md:col-span-6">
           <div class="swiper-container mySwiper h-full">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -91,8 +91,24 @@
                   <h2 class="text-center text-3xl font-semibold uppercase flex-none">Misi</h2>
                   <ul class="mt-6 flex-grow text-xl flex flex-col gap-y-2 list-disc">
                     <li>Menjadikan KSM Android sebagai sarana untuk meningkatkan kualitas pribadi yang bertanggung jawab, professional dan cerdas</li>
-                    <li>Membangun koordinasi yang aktif dan berkesinambungan bersama seluruh elemen di UPNVJ yang meliputi didalam maupun diluar Organisasi KSM Android</li>
-                    <li>Memberdayakan seluruh elemen KSM Android sebagai organisasi yang mampu berinteraksi dengan organisasi luar</li>
+                    <li class="hidden xl:list-item">Membangun koordinasi yang aktif dan berkesinambungan bersama seluruh elemen di UPNVJ yang meliputi didalam maupun diluar Organisasi KSM Android</li>
+                    <li class="hidden xl:list-item">Memberdayakan seluruh elemen KSM Android sebagai organisasi yang mampu berinteraksi dengan organisasi luar</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide xl:hidden">
+                <div class="h-full flex flex-col px-8">
+                  <h2 class="text-center text-3xl font-semibold uppercase flex-none">Misi 2</h2>
+                  <ul class="mt-6 flex-grow text-xl flex flex-col gap-y-2 list-disc">
+                    <li class="xl:hidden">Membangun koordinasi yang aktif dan berkesinambungan bersama seluruh elemen di UPNVJ yang meliputi didalam maupun diluar Organisasi KSM Android</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide xl:hidden">
+                <div class="h-full flex flex-col px-8">
+                  <h2 class="text-center text-3xl font-semibold uppercase flex-none">Misi 3</h2>
+                  <ul class="mt-6 flex-grow text-xl flex flex-col gap-y-2 list-disc">
+                    <li class="xl:hidden">Memberdayakan seluruh elemen KSM Android sebagai organisasi yang mampu berinteraksi dengan organisasi luar</li>
                   </ul>
                 </div>
               </div>
@@ -106,7 +122,7 @@
   <div id="program-kerja" class="h-screen py-16 md:py-24 bg-secondary text-gray-900">
     <div class="w-11/12 md:w-5/6 h-full mx-auto flex flex-col">
       <h1 class="text-6xl font-bold uppercase flex-none">Program Kerja</h1>
-      <div class="mt-8 flex flex-row flex-grow justify-around">
+      <div class="mt-8 flex flex-col md:flex-row flex-grow justify-around">
         <div class="w-64 flex flex-col shadow-lg">
           <div class="h-1/2 rounded-t-lg w-full bg-cover" style="background-image: url('./assets/img/mentoring.png');">
           </div>
