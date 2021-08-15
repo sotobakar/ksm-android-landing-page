@@ -580,6 +580,12 @@ video {
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
+@font-face {
+  font-family: 'Vice City Sans';
+
+  src: local('Vice City Sans'), url('./assets/fonts/ViceCitySans.otf') format('otf');
+}
+
 .container {
   width: 100%;
 }
@@ -32680,6 +32686,12 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-height {
+  transition-property: height;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .delay-75 {
   transition-delay: 75ms;
 }
@@ -32762,6 +32774,10 @@ video {
 
 .content-none {
   content: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @media (min-width: 640px) {
@@ -64374,6 +64390,12 @@ video {
 
   .sm\:transition-transform {
     transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .sm\:transition-height {
+    transition-property: height;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
   }
@@ -96073,6 +96095,12 @@ video {
     transition-duration: 150ms;
   }
 
+  .md\:transition-height {
+    transition-property: height;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
   .md\:delay-75 {
     transition-delay: 75ms;
   }
@@ -127764,6 +127792,12 @@ video {
 
   .lg\:transition-transform {
     transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .lg\:transition-height {
+    transition-property: height;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
   }
@@ -159463,6 +159497,12 @@ video {
     transition-duration: 150ms;
   }
 
+  .xl\:transition-height {
+    transition-property: height;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
   .xl\:delay-75 {
     transition-delay: 75ms;
   }
@@ -191158,6 +191198,12 @@ video {
     transition-duration: 150ms;
   }
 
+  .\32xl\:transition-height {
+    transition-property: height;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
   .\32xl\:delay-75 {
     transition-delay: 75ms;
   }
@@ -191238,3 +191284,4 @@ video {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+

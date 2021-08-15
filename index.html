@@ -4,39 +4,181 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
   <title>KSM Android</title>
 </head>
 <body class="bg-tertiary">
-  <div id="banner-home" class="relative bg-cover h-screen text-tertiary font-viceCitySans" style="background-image: url('assets/img/wallpaper.jpg');">
+  <div id="banner-home" class="relative bg-cover h-screen text-tertiary" style="background-image: url('assets/img/wallpaper.jpg');">
     <div class="absolute h-full w-full flex flex-col bg-black bg-opacity-75">
-      <nav class="fixed w-full flex-none flex flex-row px-6 py-4 justify-between">
-        <div>
-          <img src="assets/img/logo.png" alt="Logo" class="h-20">
+      <header class="fixed w-full transition-all ease-out duration-300">
+        <nav class="w-11/12 h-16 md:h-24 mx-auto flex-none flex flex-row justify-between items-center">
+          <div>
+            <img src="assets/img/logo_no_text.png" alt="Logo" class=" md:hidden h-12 ">
+            <img src="assets/img/logo.png" alt="Logo" class="hidden md:block h-20">
+          </div>
+          <div class="hidden md:flex flex-row items-center gap-x-6 font-bold text-xl">
+            <a href="./index.html">home</a>
+            <a href="./anggota.html">members</a>
+            <a href="./project.html">project showcase</a>
+          </div>
+          <button id="mobile-menu-button" class="md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </nav>
+        <div id="mobile-menu-items" class="w-11/12 mx-auto h-0 overflow-hidden transition-all ease-out duration-300">
+          <div class="flex flex-col pb-4">
+            <a class="py-2 font-semibold" href="#">Home</a>
+            <a class="py-2 font-semibold" href="#">Anggota</a>
+            <a class="py-2 font-semibold" href="#">Project Showcase</a>
+          </div>
         </div>
-        <div class="flex flex-row items-center gap-x-6 font-bold text-xl">
-          <a href="#">home</a>
-          <a href="/anggota.html">anggota</a>
-          <a href="/project.html">project showcase</a>
-        </div>
-      </nav>
+      </header>
       <div class="flex-grow flex flex-col justify-center items-center">
-        <h1 class="text-6xl">Android UPNVJ</h1>
-        <button onclick="window.location.href='#tentang-kami'" class="mt-4 px-8 py-2 rounded-lg bg-primary">Cari Tahu Tentang Kami</button>
+        <img class="w-48 md:w-72" src="assets/img/ksm_android_logo.png" alt="">
+        <button onclick="window.location.href='#tentang-kami'" class="mt-8 px-8 py-2 rounded-lg bg-primary uppercase text-2xl font-semibold">More</button>
       </div>
     </div>
   </div>
-  <div id="tentang-kami" class="min-h-screen h-full py-20 bg-primary text-tertiary">
-    <div class="container h-full lg:max-w-screen-lg mx-auto flex flex-col">
-      <h1 class="flex-none py-4 text-center text-6xl">Tentang Kami</h1>
-      <div class="flex-grow flex flex-row items-center">
-        <p class="w-1/2 text-justify px-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsam mollitia veniam nobis unde, tempore dolor natus, odio incidunt quisquam ad dignissimos itaque architecto fugiat cumque vel, nemo laboriosam inventore?</p>
-        <div class="w-1/2">
-          <img src="assets/img/ksm_android_logo.png" alt="KSM Android Logo" class="w-1/2 mx-auto">
+  <div id="tentang-kami" class="h-screen py-16 md:py-24 bg-primary text-tertiary">
+    <div class="w-11/12 md:w-5/6 h-full mx-auto flex flex-col">
+      <h1 class="text-6xl font-bold uppercase flex-none">About Us</h1>
+      <div class="mt-8 grid grid-cols-12 gap-x-8 flex-grow items-center">
+        <div class="col-span-5">
+          <img class="block w-full h-auto rounded-lg" src="assets/img/study_club.jpg" alt="">
+        </div>
+        <div class="col-span-7">
+          <div class="flex flex-col gap-y-6">
+            <p class="text-2xl font-semibold">Kami adalah kelompok studi mahasiswa Fakultas Ilmu Komputer Universitas Pembangunan Nasional Veteran Jakarta</p>
+            <p class="text-gray-200 text-xl">KSM Android UPNVJ berfokus pada beberapa bidang seperti Android, Web, Backend, UI/UX. Banyak aktivitas yang dapat dilakukan seperti Mentoring, Challenge, Project Management, dll.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <div id="tujuan-visi-misi" class="h-screen py-16 md:py-24 bg-tertiary text-gray-900">
+    <div class="w-11/12 md:w-5/6 h-full mx-auto flex flex-col">
+      <h1 class="text-6xl font-bold uppercase flex-none">Tujuan, Visi, Misi</h1>
+      <div class="mt-8 grid grid-cols-12 gap-x-8 flex-grow">
+        <div class="col-span-6">
+          <img class="block w-full h-auto" src="assets/img/tujuan_visi_misi.svg" alt="">
+        </div>
+        <div class="col-span-6">
+          <div class="swiper-container mySwiper h-full">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="h-full flex flex-col px-8">
+                  <h2 class="text-center text-3xl font-semibold uppercase flex-none">Tujuan</h2>
+                  <ul class="mt-6 flex-grow text-xl flex flex-col gap-y-6 list-disc">
+                    <li>Menciptakan lingkungan belajar bagi mahasiswa Fakultas Ilmu Komputer UPNVJ</li>
+                    <li>Berkontribusi bagi Universitas baik dalam bidang yang ditekuni oleh KSM Android</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="h-full flex flex-col px-8">
+                  <h2 class="text-center text-3xl font-semibold uppercase flex-none">Visi</h2>
+                  <ul class="mt-6 flex-grow text-xl flex flex-col gap-y-6 list-disc">
+                    <li>Mewujudkan KSM Android sebagai organisasi yang memiliki keunggulan, profesionalisme tinggi dan dapat menjadi wadah pembelajaran akademik untuk seluruh anggota organisasi</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="h-full flex flex-col px-8">
+                  <h2 class="text-center text-3xl font-semibold uppercase flex-none">Misi</h2>
+                  <ul class="mt-6 flex-grow text-xl flex flex-col gap-y-2 list-disc">
+                    <li>Menjadikan KSM Android sebagai sarana untuk meningkatkan kualitas pribadi yang bertanggung jawab, professional dan cerdas</li>
+                    <li>Membangun koordinasi yang aktif dan berkesinambungan bersama seluruh elemen di UPNVJ yang meliputi didalam maupun diluar Organisasi KSM Android</li>
+                    <li>Memberdayakan seluruh elemen KSM Android sebagai organisasi yang mampu berinteraksi dengan organisasi luar</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="program-kerja" class="h-screen py-16 md:py-24 bg-secondary text-gray-900">
+    <div class="w-11/12 md:w-5/6 h-full mx-auto flex flex-col">
+      <h1 class="text-6xl font-bold uppercase flex-none">Program Kerja</h1>
+      <div class="mt-8 flex flex-row flex-grow justify-around">
+        <div class="w-64 flex flex-col shadow-lg">
+          <div class="h-1/2 rounded-t-lg w-full bg-cover" style="background-image: url('./assets/img/mentoring.png');">
+          </div>
+          <div class="h-1/2 p-6 rounded-b-lg bg-tertiary text-gray-900">
+            <p class="font-semibold text-xl">Mentoring</p>
+            <p class="mt-3 text-md">Kelas bimbingan pemrograman yang diajar oleh mentor</p>
+          </div>
+        </div>
+        <div class="w-64 flex flex-col shadow-lg">
+          <div class="h-1/2 rounded-t-lg w-full bg-cover" style="background-image: url('./assets/img/project_managing.jpg');">
+          </div>
+          <div class="h-1/2 p-6 rounded-b-lg bg-tertiary text-gray-900">
+            <p class="font-semibold text-xl">Project Managing</p>
+            <p class="mt-3 text-md">Membentuk sebuah tim dan menyelesaikan sebuah proyek dengan kolaborasi</p>
+          </div>
+        </div>
+        <div class="w-64 flex flex-col shadow-lg">
+          <div class="h-1/2 rounded-t-lg w-full bg-cover" style="background-image: url('./assets/img/android_challenge.png');">
+          </div>
+          <div class="h-1/2 p-6 rounded-b-lg bg-tertiary text-gray-900">
+            <p class="font-semibold text-xl">Android Challenge</p>
+            <p class="mt-3 text-md">Mengikuti lomba-lomba atas nama KSM Android</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="h-full bg-gray-900 text-tertiary pt-7 pb-9 md:pt-20 md:pb-12">
+    <div
+      class="h-full w-11/12 md:w-full max-w-screen-lg md:px-4 mx-auto grid grid-cols-12 gap-y-6 md:gap-y-0 md:grid-rows-3 md:gap-x-10 lg:gap-x-20">
+      <div class="col-span-12 md:col-span-7 md:row-span-2 flex flex-col md:flex-row justify-between gap-y-6 md:gap-y-0">
+        <div class="flex flex-col gap-y-3 md:gap-y-6">
+          <h6 class="font-bold text-secondary">Universitas</h6>
+          <a class="block text-small" href="/karir">Website Link</a>
+        </div>
+        <div class="flex flex-col gap-y-3 md:gap-y-6">
+          <h6 class="font-bold text-secondary">KSM Android</h6>
+          <a class="block text-small" href="/karir">Upcoming Events</a>
+          <a class="block text-small" href="/karir">Registration</a>
+          <a class="block text-small" href="/karir">YouTube Channel</a>
+        </div>
+        <div class="flex flex-col gap-y-3 md:gap-y-6">
+          <h6 class="font-bold text-secondary">Hubungi Kami</h6>
+          <p class="text-small">+62 813-1647-2184</p>
+          <p class="text-small">android@upnvj.ac.id</p>
+        </div>
+      </div>
+      <div class="col-span-12 md:col-span-5 md:row-span-3 flex flex-col gap-y-3 md:gap-y-6">
+        <h6 class="font-bold text-secondary">Lokasi Kami</h6>
+        <p class="text-small">Jl. RS. Fatmawati Raya No.1, RT.1/RW.1, Pd. Labu, Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12430</p>
+        <a class="w-full h-full" href="https://goo.gl/maps/iNxYd8xucUPHWYbAA" target="_blank">
+          <img class="w-60 md:w-full h-auto" src="assets/img/map.png" alt="Google Map">
+        </a>
+      </div>
+      <div class="col-span-12 md:col-span-7 md:row-span-1 flex flex-col gap-y-6">
+        <h6 class="font-bold text-secondary">Social Media</h6>
+        <div class="w-1/2 md:w-full flex flex-row gap-x-4">
+          <a href="https://instagram.com/kibumi.id?utm_medium=copy_link" target="_blank">
+            <img src="assets/img/social-media/ic_social_instagram.svg" alt="Instagram">
+          </a>
+          <a href="https://www.facebook.com/kibumi.id" target="_blank">
+            <img src="assets/img/social-media/ic_social_facebook.svg" alt="Facebook">
+          </a>
+          <a href="https://twitter.com/kibumi_id?s=11" target="_blank">
+            <img src="assets/img/social-media/ic_social_twitter.svg" alt="Twitter">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>

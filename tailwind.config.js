@@ -10,7 +10,10 @@ module.exports = {
       },
       fontFamily : {
         'viceCitySans' : ['Vice City Sans', 'sans-serif']
-      }
+      },
+      transitionProperty: {
+        height: 'height'
+      },
     },
   },
   variants: {
