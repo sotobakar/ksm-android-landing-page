@@ -13,7 +13,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "tailwindcss build -i style.css -o assets/css/style.css"
+    "build-css": "tailwindcss build -i style.css -o assets/css/style.css",
+    "dev" : "set NODE_ENV=development && npm run build-css",
+    "prod": "set NODE_ENV=production && npm run build-css"
   },
   "repository": {
     "type": "git",
